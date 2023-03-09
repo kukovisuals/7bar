@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seven Bar Foundation - Impact</title>
+
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/component.css">
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/barba.min.js"></script>
+</head>
+
+<body>
+
+<div id="st-container" class="st-container">
+<div class="st-pusher">
+
+<nav class="st-menu st-effect-3" id="menu-3">
+					<ul class="side-nav">
+						<li><a class="icon icon-data" href="#">How It Works</a></li>
+						<li><a class="icon icon-location" href="#">Impact</a></li>
+						<li><a class="icon icon-study" href="#">Press</a></li>
+						<li><a class="icon icon-photo" href="#">faq's</a></li>
+						<li><a class="icon icon-wallet" href="#">Contact us</a></li>
+					</ul>
+				</nav>
+
+<div class="st-content">
+  <div class="st-content-inner">
+
+  <header class="site-header"> 
+    <div id="st-trigger-effects" class="menu-icon">
+      <button data-effect="st-effect-3" class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <div class="logo"></div>
+  </header>  
+
+  <div class="impact-header">
+    <div class="page-title"><span class="pre-title">See our</span><br>Impact</div>
+
+    <div class="impact-statement">
+
+    </div> 
+  </div>
+
+  <nav class="impact-nav">
+    <div class="countries-container">
+      <a href="usa.html">usa</a>
+      <a href="mexico.html">Mexico</a>
+      <a href="india.html">India</a>
+      <a href="srilanka.html">SRI Lanka</a>
+      <a href="columbia.html">Columbia</a>
+      <a href="rwanda.html">Rwanda</a>
+      <a href="ghana.html">ghana</a>
+      <a href="indonesia.html">indonesia</a>
+      <a href="haiti.html">Haiti</a>
+      <a href="nicargua.html">nicaragua</a>
+    </div>
+  </nav>
+ 
+  <div id="barba-wrapper">
+      <div class="barba-container">
+
+  <div id="india" class="impact-banner">
+
+      <div class="impact-country-img">
+        <img src="img/impact/indo.jpg" alt="">
+      </div>
+
+      <div class="impact-country-content">
+        <div class="impact-country-title">Opportunity Indonesia</div>
+
+        <ul class="loan-stats">
+          <li>Average minimum wage: $0.48/Hour</li>
+          <li>Loan Amount by SBF: USD 16,000</li>
+          <li>Average New Loan Size: USD 145</li>
+          <li>Repayment Rate: 99%</li>
+        </ul>
+
+      </div>
+  </div>
+
+  <div class="org-container">
+    <div class="org-summary">
+      <div class="para">
+          With more than 100 million Indonesians living in poverty, Opportunity Indonesia has addressed critical issues like sanitation, access to electricity, and migration to urban areas. 
+      </div>    
+      
+    </div>
+
+  <div class="org-bullet-grid">
+      <div class="org-bullets">
+          <p class="para">
+              Opportunity Indonesia has helped families build businesses to get them out of poverty. Opportunity Indonesia offers small loans, business training, savings resources, microinsurance and rural outreach to empower families.  
+          </p>
+      </div>
+      <div class="org-bullets">
+        <p class="para">
+          By transforming lives of over 3 million people across 600,749 families, Opportunity Indonesia has supported 82,924 entrepreneurs to build business. 
+        </p>
+      </div>
+  </div>
+
+  </div>
+
+  <div class="impact-testimonials-container">
+      <div class="testimonials-container">
+        <div class="testimonials-content">
+          <div class="testimonials-title">
+            Testimonial
+          </div
+          ><span class="name">Ferderika</span>
+          <p class="para">
+            Business: Selling Coconut Oil
+          </p>
+          <p class="para">
+              Ferderika lives in Apren village in West Timor, around 90 minutes travel from the region’s main city,Kupang. The village is well known for its beautiful lake Nefoko'uk – literally “big lake” in the local language. Ferderika and her husband Yusuf have three children. Thanks to your support Ferderika has started a small business selling coconut oil. With a small loan from Opportunity’s program partner, TLM, she invested in raw materials and equipment including a grating machine.To produce a batch of her oil she buys around 100 coconuts from traders in her village. Each coconut must be peeled, grated and squeezed to collect fresh coconut milk. She then cooks the milk for a few hours and leaves it to cool to room temperature. Then the oil is ready to be bottled and sold. Now with her increased income Ferderika is able to more easily cover the cost of her children’s education. She and Yusuf are proud their second child will be able to attend university, they are very hopeful a good education will help their children access more opportunities in their lives.
+          </p>
+        </div>
+        <div class="testimonials-img"><img src="img/impact/indonesia.jpg" alt=""></div>
+      </div> 
+  </div> 
+
+</div> 
+</div> 
+
+  <footer>
+  </footer>
+  
+          </div><!-- st-content-inner -->
+        </div><!-- st-content -->
+      </div><!-- st-pusher -->
+    </div><!-- st-container -->
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      
+$('document').ready(function(){
+            var transEffect = Barba.BaseTransition.extend({
+                start: function(){
+                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+                },
+                fadeInNewcontent: function(nc) {
+                  nc.hide();
+                  var _this = this;
+                  $(this.oldContainer).fadeOut(600).promise().done(() => {
+                    nc.css('visibility','visible');
+                    nc.fadeIn(500, function(){
+                      _this.done();
+                    })
+                  });
+                }
+            });
+            Barba.Pjax.getTransition = function() {
+              return transEffect;
+            }
+            Barba.Pjax.start();
+          });
+    </script>
+  </body>
+  </html>

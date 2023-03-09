@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seven Bar Foundation - Impact</title>
+
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/component.css">
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/barba.min.js"></script>
+</head>
+
+<body>
+
+<div id="st-container" class="st-container">
+<div class="st-pusher">
+
+<nav class="st-menu st-effect-3" id="menu-3">
+					<ul class="side-nav">
+						<li><a class="icon icon-data" href="#">How It Works</a></li>
+						<li><a class="icon icon-location" href="#">Impact</a></li>
+						<li><a class="icon icon-study" href="#">Press</a></li>
+						<li><a class="icon icon-photo" href="#">faq's</a></li>
+						<li><a class="icon icon-wallet" href="#">Contact us</a></li>
+					</ul>
+				</nav>
+
+<div class="st-content">
+  <div class="st-content-inner">
+
+  <header class="site-header"> 
+    <div id="st-trigger-effects" class="menu-icon">
+      <button data-effect="st-effect-3" class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <div class="logo"></div>
+  </header>  
+
+  <div class="impact-header">
+    <div class="page-title"><span class="pre-title">See our</span><br>Impact</div>
+
+    <div class="impact-statement">
+
+    </div> 
+  </div>
+
+  <nav class="impact-nav">
+    <div class="countries-container">
+      <a href="usa.html">usa</a>
+      <a href="mexico.html">Mexico</a>
+      <a href="india.html">India</a>
+      <a href="srilanka.html">SRI Lanka</a>
+      <a href="columbia.html">Columbia</a>
+      <a href="rwanda.html">Rwanda</a>
+      <a href="ghana.html">ghana</a>
+      <a href="indonesia.html">indonesia</a>
+      <a href="haiti.html">Haiti</a>
+      <a href="nicargua.html">nicaragua</a>
+    </div>
+  </nav>
+ 
+  <div id="barba-wrapper">
+      <div class="barba-container">
+
+  <div id="india" class="impact-banner">
+
+      <div class="impact-country-img">
+        <img src="img/impact/haiti.jpg" alt="">
+      </div>
+
+      <div class="impact-country-content">
+        <div class="impact-country-title">Fonkoze<br> Haiti</div>
+
+        <ul class="loan-stats">
+          <li>Average minimum wage: $0.25/Hour</li>
+          <li>Average New Loan Size: USD 45 – USD 240</li>
+        </ul>
+
+      </div>
+  </div>
+
+  <div class="org-container">
+    <div class="org-summary">
+      <div class="para">
+          Fonkoze is a family of organizations that work together to provide the financial and non-financial services to empower Haitians—primarily women—to lift their families out of poverty.
+      </div>    
+      
+    </div>
+
+  <div class="org-bullet-grid">
+      <div class="org-bullets">
+          <p class="para">
+              Services offered: Loans, savings, money transfers, currency exchange, and payroll management 
+          </p>
+      </div>
+      <div class="org-bullets">
+        <p class="para">
+            In 2016, The Fonkoze Foundation supported the Fonkoze clients, members and their communities by offering health program, adult education programs, Fonkoze’s 18-month program for the ultra-poor called ‘the pathway to better life’ and value chain development program. 
+        </p>
+      </div>
+  </div>
+
+  <div class="org-bullet-grid">
+      <div class="org-bullets">
+          <p class="para">
+              520 community health entrepreneurs were trained along with 610 children screened for malnutrition 
+          </p>
+      </div>
+      <div class="org-bullets">
+        <p class="para">
+            2,826 women graduated from Adult Education class of 2016 keeping the graduation rate as high as 94%
+        </p>
+      </div>
+  </div>
+
+  </div>
+
+  <div class="impact-testimonials-container">
+      <div class="testimonials-container">
+        <div class="testimonials-content">
+          <div class="testimonials-title">
+            Testimonial
+          </div
+          ><span class="name">Josephine Mukankusi</span>
+          <p class="para">
+            Business: Fertilizer Sales
+          </p>
+          <p class="para">
+              Josephine Mukankusi, loving mother of four children ranging from five to 13-years-old, supports her family, plus an adopted child age 20, by selling fertilizer and other agro products. She runs her business near her home in Kigali, Rwanda. She launched her business in 2012 by investing an Opportunity Rwanda loan coupled with financial literacy and business training and lots of encouragement and mentoring from her loan officer, Emory. She used that first loan of $70 to purchase bulks of high-quality fertilizer and other supplies and over the course of four years and nine more loans has grown her business into a profitable venture. 
+          </p>
+          <p class="para">
+              Today, Josephine has increased her income dramatically, sending all of her children to school and even purchasing a property to rent for additional income. She has opened her first savings accounts and is planning once again to expand into a wholesale operation.
+          </p>
+        </div>
+        <div class="testimonials-img"><img src="img/impact/haiti-2.jpg" alt=""></div>
+      </div> 
+  </div> 
+
+</div> 
+</div> 
+
+  <footer>
+  </footer>
+  
+          </div><!-- st-content-inner -->
+        </div><!-- st-content -->
+      </div><!-- st-pusher -->
+    </div><!-- st-container -->
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      
+$('document').ready(function(){
+            var transEffect = Barba.BaseTransition.extend({
+                start: function(){
+                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+                },
+                fadeInNewcontent: function(nc) {
+                  nc.hide();
+                  var _this = this;
+                  $(this.oldContainer).fadeOut(600).promise().done(() => {
+                    nc.css('visibility','visible');
+                    nc.fadeIn(500, function(){
+                      _this.done();
+                    })
+                  });
+                }
+            });
+            Barba.Pjax.getTransition = function() {
+              return transEffect;
+            }
+            Barba.Pjax.start();
+          });
+    </script>
+  </body>
+  </html>

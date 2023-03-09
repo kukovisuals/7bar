@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seven Bar Foundation - Impact</title>
+
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/component.css">
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/barba.min.js"></script>
+</head>
+
+<body>
+
+<div id="st-container" class="st-container">
+<div class="st-pusher">
+
+<nav class="st-menu st-effect-3" id="menu-3">
+					<ul class="side-nav">
+						<li><a class="icon icon-data" href="#">How It Works</a></li>
+						<li><a class="icon icon-location" href="#">Impact</a></li>
+						<li><a class="icon icon-study" href="#">Press</a></li>
+						<li><a class="icon icon-photo" href="#">faq's</a></li>
+						<li><a class="icon icon-wallet" href="#">Contact us</a></li>
+					</ul>
+				</nav>
+
+<div class="st-content">
+  <div class="st-content-inner">
+
+  <header class="site-header"> 
+    <div id="st-trigger-effects" class="menu-icon">
+      <button data-effect="st-effect-3" class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <div class="logo"></div>
+  </header>  
+
+  <div class="impact-header">
+    <div class="page-title"><span class="pre-title">See our</span><br>Impact</div>
+
+    <div class="impact-statement">
+
+    </div> 
+  </div>
+
+  <nav class="impact-nav">
+    <div class="countries-container">
+      <a href="usa.html">usa</a>
+      <a href="mexico.html">Mexico</a>
+      <a href="india.html">India</a>
+      <a href="srilanka.html">SRI Lanka</a>
+      <a href="columbia.html">Columbia</a>
+      <a href="rwanda.html">Rwanda</a>
+      <a href="ghana.html">ghana</a>
+      <a href="indonesia.html">indonesia</a>
+      <a href="haiti.html">Haiti</a>
+      <a href="nicargua.html">nicaragua</a>
+    </div>
+  </nav>
+ 
+  <div id="barba-wrapper">
+      <div class="barba-container">
+
+  <div id="india" class="impact-banner">
+
+      <div class="impact-country-img">
+        <img src="img/impact/usa.jpg" alt="">
+      </div>
+
+      <div class="impact-country-content">
+        <div class="impact-country-title">ACCION USA<br> USA</div>
+
+        <ul class="loan-stats">
+          <li>Average minimum wage: $7.25/Hour</li>
+          <li>Loan Amount by SBF: USD 160,000</li>
+          <li>Average New Loan Size: USD 8000</li>
+        </ul>
+
+      </div>
+  </div>
+
+  <div class="org-container">
+    <div class="org-summary">
+      <div class="para">
+          Accion connects small business owners with the financing and support it takes to create or grow healthy businesses.
+      </div>    
+      
+    </div>
+
+  <div class="org-bullet-grid">
+      <div class="org-bullets">
+          <p class="para">
+              With a business survival rate of 97%, ACCION USA has lent 3,467 loans worth USD 36,817,155 last year. Out of all the loans disbursed, 42% were lent to women. 
+          </p>
+      </div>
+      <div class="org-bullets">
+        <p class="para">
+            Accion offers the personalized training; mentoring and resources that entrepreneurs need to reach their full potential.
+        </p>
+      </div>
+  </div>
+
+  </div>
+
+  <div class="impact-testimonials-container">
+      <div class="testimonials-container">
+        <div class="testimonials-content">
+          <div class="testimonials-title">
+            Testimonial
+          </div
+          ><span class="name">Danielle Trofe </span>
+          <p class="para">
+            Business: Lighting and Furniture Design Studio/Urban Gardening Technology
+          </p>
+          <p class="para">
+            Her project, Live Screen, a hydroponic garden installation for the indoors, had won international recognition from Italy’s Winter Design Furniture Fair. With her newfound success, Danielle decided to start her own lighting and furniture design studio, focusing on a function-forward approach working with sustainable materials and local manufacturing companies.
+          </p>
+
+          <p class="para">
+            
+            Danielle had depleted any working capital she had to move her business forward and was seeking capital when she came across an article about the Tory Burch Foundation, which directed her to Accion. Danielle applied for a loan through Accion’s Sandy Recovery Program and received a $13,000 loan and a $1,950 grant to support her in building and testing a second Live Screen prototype, move to a different studio, and help her showcase her product at another furniture fair to large-scale manufacturers. With an Accion loan and grant, Danielle is able to continue growing her business of creating affordable urban gardening technology.
+          </p>
+
+        </div>
+        <div class="testimonials-img"><img src="img/impact/Danielle-Trofe.jpg" alt=""></div>
+      </div> 
+  </div> 
+
+</div> 
+</div> 
+
+  <footer>
+  </footer>
+  
+          </div><!-- st-content-inner -->
+        </div><!-- st-content -->
+      </div><!-- st-pusher -->
+    </div><!-- st-container -->
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      
+$('document').ready(function(){
+            var transEffect = Barba.BaseTransition.extend({
+                start: function(){
+                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+                },
+                fadeInNewcontent: function(nc) {
+                  nc.hide();
+                  var _this = this;
+                  $(this.oldContainer).fadeOut(600).promise().done(() => {
+                    nc.css('visibility','visible');
+                    nc.fadeIn(500, function(){
+                      _this.done();
+                    })
+                  });
+                }
+            });
+            Barba.Pjax.getTransition = function() {
+              return transEffect;
+            }
+            Barba.Pjax.start();
+          });
+    </script>
+  </body>
+  </html>
